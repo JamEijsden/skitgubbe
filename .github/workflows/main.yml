@@ -28,10 +28,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Move to client
-        run: cd client
       - name: Checkout
         uses: actions/checkout@v5
+      - name: Move to client
+        run: cd client
       - name: Set up Node
         uses: actions/setup-node@v5
         with:
