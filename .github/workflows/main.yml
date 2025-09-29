@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           # Path is relative to repo root
-          path: client/dist   # 👈 Important: build output is inside client
+          path: ./client/dist   # 👈 Important: build output is inside client
 
       - name: Deploy to GitHub Pages
         id: deployment
